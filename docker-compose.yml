@@ -6,6 +6,8 @@ services:
     restart: unless-stopped
     depends_on:
       - db
+    ports:
+      - 4567:4567
     expose:
       - 4567 # use a reverse proxy like Traefik
 
